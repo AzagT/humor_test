@@ -22,6 +22,11 @@ class AppKernel extends Kernel
             new Humohumor\MainBundle\HumohumorMainBundle(),
 
             new FOS\UserBundle\FOSUserBundle(),
+
+            new Sonata\BlockBundle\SonataBlockBundle(),
+            new Sonata\jQueryBundle\SonatajQueryBundle(),
+            new Sonata\AdminBundle\SonataAdminBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
